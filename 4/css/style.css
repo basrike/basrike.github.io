@@ -389,7 +389,7 @@ a {
           padding: 5px 10px;
           color: #fff; } }
       #site-navigation ul li a:hover {
-        color: #000; }
+        color: #f29216; }
         @media (max-width: 600px) {
           #site-navigation ul li a:hover {
             background: #000;
