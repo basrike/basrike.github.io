@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,700');
+
+* {
+  outline: none;
+}
+
+body {
+  line-height: 18px;
+  font-family: verdana, arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: #2b82a5;
+}
+
+h2 a {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+a {
+  -webkit-transition: color 0.8s;
+  transition: color 0.8s;
+  text-decoration: none;
+  color: #1a96bd;
+}
+
+a:hover {
+  -webkit-transition: color 0.4s;
+  transition: color 0.4s;
+  text-decoration: none;
+}
+
+.site {
+  padding: 16px 21px;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.clearfix:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+.travel {
+  line-height: 0;
+  font-size: 0;
+  text-align: center;
+}
+
+.block {
+  display: inline-block;
+  width: 240px;
+  margin: 0 10px 20px 10px;
+  padding: 10px 20px 10px 20px;
+  border: 1px solid #d4d4d4;
+  box-sizing: border-box;
+  vertical-align: top;
+  -webkit-transition: box-shadow 0.8s;
+  transition: box-shadow 0.8s;
+  text-align: left;
+}
+
+.block:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  -webkit-transition: box-shadow 0.4s;
+  transition: box-shadow 0.4s;
+}
+
+.block__user {
+  width: 100%;
+  overflow: hidden;
+  margin: 0 0 6px 0;
+  letter-spacing: -0.4px;
+  line-height: 18px;
+  font-size: 11px;
+  color: #1a96bd;
+}
+
+.block__user img {
+  position: relative;
+  float: left;
+  margin: 0 9px 0 0;
+  z-index: 2;
+}
+
+.block__user span {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.block__user a {
+  color: inherit;
+}
+
+.block__user a:hover {
+  color: #999;
+}
+
+.block__image {
+  background: #000;
+  position: relative;
+  min-height: 50px;
+  overflow: hidden;
+  margin: -32px -21px 11px -21px;
+  z-index: 1;
+}
+
+.block__image a {
+  display: block;
+}
+
+.block__image a:before {
+  background: url(../img/image_shadow.png) repeat-x 50% 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  content: '';
+}
+
+.block__image a:hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+}
+
+.block__image img {
+  width: 100%;
+  margin: 0;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+}
+
+.block__image strong {
+  position: absolute;
+  left: 16px;
+  bottom: -7px;
+  line-height: 50px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  color: #fff;
+  z-index: 3;
+}
+
+.block__image strong span {
+  font-weight: 300;
+}
+
+.block__title {
+  margin: 0 0 6px -2px;
+  line-height: 22px;
+  font-size: 18px;
+}
+
+.block__title a {
+  color: inherit;
+}
+
+.block__title a:hover {
+  color: #999;
+}
