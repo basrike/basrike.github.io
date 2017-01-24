@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,700');
+
+
+
+@color_title: #2b82a5;
+@color_border: #d4d4d4;
+@color_style_1: #1a96bd;
+@color_dark: #000;
+@color_light: #fff;
+@color_grey: #999;
+
+
+
+* {
+	outline: none;
+}
+
+body {
+	line-height: 18px;
+	font-family: verdana, arial, sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+}
+
+h2 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	color: @color_title;
+
+	a {
+		color: inherit;
+	}
+
+}
+
+img {
+	max-width: 100%;
+	vertical-align: top;
+}
+
+a {
+	transition: color 0.8s;
+	text-decoration: none;
+	color: @color_style_1;
+
+	&:hover {
+		transition: color 0.4s;
+		text-decoration: none;
+	}
+
+}
+
+
+
+.site {
+	padding: 16px 21px;
+}
+
+.wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.clearfix {
+	&:after {
+		display: block;
+		clear: both;
+		content: '';
+	}
+}
+
+
+
+.travel {
+	line-height: 0;
+	font-size: 0;
+	text-align: center;
+}
+
+.block {
+	display: inline-block;
+	width: 240px;
+	margin: 0 10px 20px 10px;
+	padding: 10px 20px 10px 20px;
+	border: 1px solid @color_border;
+	box-sizing: border-box;
+	vertical-align: top;
+	transition: box-shadow 0.8s;
+	text-align: left;
+
+	&:hover {
+		box-shadow: 0 0 5px rgba(0,0,0,0.3);
+		transition: box-shadow 0.4s;
+	}
+
+	&__user {
+		width: 100%;
+		overflow: hidden;
+		margin: 0 0 6px 0;
+		letter-spacing: -0.4px;
+		line-height: 18px;
+		font-size: 11px;
+		color: @color_style_1;
+
+		img {
+			position: relative;
+			float: left;
+			margin: 0 9px 0 0;
+			z-index: 2;
+		}
+
+		span {
+			overflow: hidden;
+		}
+
+		a {
+			display: block;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			color: inherit;
+
+			&:hover {
+				color: @color_grey;
+			}
+
+		}
+
+	}
+
+	&__image {
+		background: @color_dark;
+		position: relative;
+		min-height: 50px;
+		overflow: hidden;
+		margin: -32px -21px 11px -21px;
+		z-index: 1;
+
+		a {
+			display: block;
+
+			&:before {
+				background: url(../img/image_shadow.png) repeat-x 50% 100%;
+				display: block;
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				z-index: 2;
+				content: '';
+			}
+
+			&:hover {
+				img {
+					transform: scale(1.1);
+					transition: transform 0.4s;
+				}
+			}
+
+		}
+
+		img {
+			width: 100%;
+			margin: 0;
+			transition: transform 0.8s;
+		}
+
+		strong {
+			position: absolute;
+			left: 16px;
+			bottom: -7px;
+			line-height: 50px;
+			font-family: 'Roboto', sans-serif;
+			font-size: 50px;
+			font-weight: 700;
+			color: @color_light;
+			z-index: 3;
+
+			span {
+				font-weight: 300;
+			}
+
+		}
+
+	}
+
+	&__title {
+		margin: 0 0 6px -2px;
+		line-height: 22px;
+		font-size: 18px;
+
+		a {
+			color: inherit;
+
+			&:hover {
+				color: @color_grey;
+			}
+
+		}
+
+	}
+
+}
